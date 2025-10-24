@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uwase benigne potifolio </title>
+    <style>
+        /* ====== CSS START ====== */
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: Arial, sans-serif; line-height:1.6; background-color:#f5f5f5; color:#333; }
+
+        /* Header */
+        header { background:#0505e900; color:#fff; padding:1rem; text-align:center; }
+        header nav ul { list-style:none; display:flex; justify-content:center; gap:2rem; margin-top:0.5rem; }
+        header nav a { color:#fff; text-decoration:none; transition: color 0.3s; }
+        header nav a:hover { color:#ff9800; }
+
+        /* Sections */
+        section { padding:2rem; max-width:900px; margin:auto; }
+        h2 { margin-bottom:1rem; color:#333; }
+
+        /* Projects */
+        .project-card { background:#fff; padding:1rem; margin:1rem 0; border-radius:8px; box-shadow:0 0 10px rgba(0,0,0,0.1); transition:transform 0.3s; }
+        .project-card:hover { transform: translateY(-5px); }
+        .project-card a { display:inline-block; margin-top:0.5rem; color:#ff9800; text-decoration:none; }
+
+        /* Contact Form */
+        form input, form textarea { width:100%; padding:0.5rem; margin-bottom:1rem; border:1px solid #ccc; border-radius:4px; }
+        form button { padding:0.5rem 2rem; background:#333; color:#fff; border:none; cursor:pointer; border-radius:4px; transition: background-color 0.3s; }
+        form button:hover { background:#ff9800; }
+
+        /* Footer */
+        footer { background:#333; color:#fff; text-align:center; padding:1rem; margin-top:2rem; }
+
+        /* Responsive */
+        @media (max-width:768px) {
+            header nav ul { flex-direction:column; gap:1rem; }
+        }
+        /* ====== CSS END ====== */
+    </style>
+</head>
+<body>
+    <!-- ====== HTML START ====== -->
+    <header>
+        <h1>uwase benigne</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am <strong>UWASE Benigne</strong>, a web developer passionate about creating modern, responsive, and user-friendly websites.</p>
+    </section>
+
+    <section id="projects">
+        <h2>benigne Project</h2>
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>knowing how to use the codes without any issues</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p></p>
+            <a href="#">View Projec</a>
+        </div>
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>design the programmes or codes</p>
+            <a href="#">View Project</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Benigne 2025. All rights reserved.</p>
+    </footer>
+    <!-- ====== HTML END ====== -->
+
+    <script>
+        /* ====== JS START ====== */
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            alert('Thank you! Your message has been sent.');
+            form.reset();
+        });
+        /* ====== JS END ====== */
+    </script>
+</body>
+</html>
+
